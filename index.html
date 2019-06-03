@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pallete</title>
+  <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+
+<body>
+  <header class="top-bar">
+    <h1 class="title">CodeJam - Pallete</h1>
+    <img class="top-bar-navicon" src="./images/i5.png" alt="navigation">
+    <img class="top-bar-menuicon" src="./images/i6.png" alt="main-menu">
+  </header>
+
+  <main class="workspace">
+
+    <div class="tool-menu">
+      <button id="bucket" class="tool-item bucket">
+        <div class="tool-icon bucket">
+          <img class="tool-img bucket" src="./images/i1.png" alt="ico-bucket">
+        </div>
+        <div class="tool-name bucket">Paint bucket (b)</div>
+      </button>
+      <button id="eyedropper" class="tool-item eyedropper">
+        <div class="tool-icon eyedropper">
+          <img class="tool-img eyedropper" src="./images/i2.png" alt="ico-eyedropper">
+        </div>
+        <div class="tool-name eyedropper">Choose color (c)</div>
+      </button>
+      <div class="tool-divider"></div>
+      <button id="move" class="tool-item move">
+        <div class="tool-icon move">
+          <img class="tool-img move" src="./images/i3.png" alt="ico-move">
+        </div>
+        <div class="tool-name move">Move (m)</div>
+      </button>
+      <button id="transform" class="tool-item transform">
+        <div class="tool-icon transform">
+          <img class="tool-img transform" src="./images/i4.png" alt="ico-transform">
+        </div>
+        <div class="tool-name transform">Transform (t)</div>
+      </button>
+    </div>
+
+    <div class="color-palette">
+      <button class="color-item current">
+        <div class="color-icon current"></div>
+        <div class="color-name current">Current color</div>
+      </button>
+      <button class="color-item prev">
+        <div class="color-icon prev"></div>
+        <div class="color-name prev">Previous color</div>
+      </button>
+      <div class="color-divider"></div>
+      <button class="color-item red">
+        <div class="color-icon red"></div>
+        <div class="color-name red">red</div>
+      </button>
+      <div class="color-item blue">
+        <div class="color-icon blue"></div>
+        <div class="color-name blue">blue</div>
+      </div>
+    </div>
+    <div class="frame-list-container-scroller">
+      <div class="frame-list-container">
+        <ul class="frame-list">
+          <li class="frame" data-cur-frame-num="1" data-is-active="1">
+            <button class="frame-del" data-cur-frame-num="1"></button>
+            <button class="frame-copy" data-cur-frame-num="1"></button>
+            <button class="frame-number" data-cur-frame-num="1">1</button>
+            <button class="frame-swap" data-cur-frame-num="1"></button>
+            <div class="background">
+            </div>
+            <canvas id="frame-canvas" class="canvas-frame" data-cur-frame-num="1" width="96" height="96"></canvas>
+          </li>
+
+
+
+          <div class="add-frame">
+            <div class="add-frame-ico"></div>
+            <div class="add-frame-text">Add new frame</div>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-canvas-container">
+
+      <canvas id="main-canvas" class="main-canvas" width="384" height="384"></canvas>
+    </div>
+
+    <div class="preview-container">
+      <div class="to-fs-mode-btn">
+      </div>
+      <div class="preview">
+      </div>
+      <div class="fps-controls">
+        <span class="fps">0 FPS</span>
+        <input class="choose-fps" type="range" min="0" max="24" value="0">
+      </div>
+    </div>
+
+
+
+    <button id="load" class="tool-item load">
+      <div class="load-name">Load</div>
+    </button>
+
+    <button id="save" class="tool-item save">
+      <div class="save-name">Save</div>
+    </button>
+
+  </main>
+  <!-- <script src="./storage.js"></script> -->
+
+  <script src="./index.js"></script>
+  <!-- <script src="./main-canvas/frames.js"></script> -->
+  <script src="./piskel-frames/frames.js"></script>
+</body>
+
+</html>

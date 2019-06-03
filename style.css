@@ -1,0 +1,508 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: rgb(196, 196, 196);
+}
+
+.top-bar {
+  position: relative;
+  z-index: 5;
+
+  width: 1440px;
+  height: 48px;
+
+  background: rgb(255, 255, 255);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24), 0 0 4px rgb(200, 200, 200);
+}
+
+.title {
+  position: absolute;
+  top: 12px;
+  left: 72px;
+
+  margin: 0;
+
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 20px;
+  line-height: 23px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.top-bar-navicon {
+  position: absolute;
+  top: 16px;
+  left: 19px;
+}
+
+.top-bar-menuicon {
+  position: absolute;
+  top: 14px;
+  right: 20px;
+}
+
+.workspace {
+  position: relative;
+
+  width: 1440px;
+  height: 852px;
+  overflow: hidden;
+
+  background: rgb(255, 255, 255);
+}
+
+
+.tool-menu {
+  position: absolute;
+  top: 79px;
+  left: 29px;
+  z-index: 10;
+
+  width: 228px;
+  height: 246px;
+
+  background: rgb(255, 255, 255);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24), 0 0 4px rgb(200, 200, 200);
+}
+
+button {
+  padding: 0;
+
+  background-color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+}
+
+.tool-divider {
+  position: absolute;
+  top: 116px;
+
+  width: 100%;
+  height: 1px;
+
+  background: rgb(200, 200, 200);
+}
+
+.tool-item {
+  position: absolute;
+  left: 16px;
+
+  width: 196px;
+  height: 48px;
+}
+
+.tool-item.bucket {
+  top: 10px;
+}
+
+.tool-item.eyedropper {
+  top: 58px;
+}
+
+
+.tool-item.move {
+  top: 127px;
+}
+
+.tool-item.transform {
+  top: 175px;
+}
+
+.tool-icon {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+
+  width: 24px;
+  height: 24px;
+}
+
+.tool-img {
+  position: absolute;
+  left: 0;
+}
+
+.tool-img.bucket {
+  top: 2px;
+}
+
+.tool-img.transform {
+  top: 3px;
+}
+
+.tool-name {
+  position: absolute;
+  top: 11px;
+  left: 60px;
+
+  display: flex;
+  align-items: center;
+  width: 152px;
+  height: 24px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.541327);
+}
+
+
+.color-palette {
+  position: absolute;
+  top: 417px;
+  left: 29px;
+  z-index: 10;
+
+  width: 228px;
+  height: 246px;
+
+  background: rgb(255, 255, 255);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24), 0 0 4px rgb(200, 200, 200);
+}
+
+.color-divider {
+  position: absolute;
+  top: 116px;
+
+  width: 100%;
+  height: 1px;
+
+  background: rgb(200, 200, 200);
+}
+
+.color-item {
+  position: absolute;
+  left: 16px;
+
+  width: 196px;
+  height: 48px;
+}
+
+.color-item.current {
+  top: 10px;
+}
+
+.color-item.prev {
+  top: 58px;
+}
+
+.color-item.red {
+  top: 127px;
+}
+
+.color-item.blue {
+  top: 175px;
+}
+
+.color-icon {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+
+  width: 24px;
+  height: 24px;
+
+  border: 2px solid rgba(0, 0, 0, 0.19);
+  border-radius: 4px;
+}
+
+.color-icon.current {
+  background-color: rgb(196, 196, 196);
+}
+
+.color-icon.prev {
+  background-color: rgb(65, 247, 149);
+}
+
+.color-icon.red {
+  background-color: rgb(247, 65, 65);
+}
+
+.color-icon.blue {
+  background-color: rgb(65, 182, 247);
+}
+
+.color-name {
+  position: absolute;
+  top: 12px;
+  left: 60px;
+
+  display: flex;
+  align-items: center;
+  width: 152px;
+  height: 24px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.541327);
+}
+
+.toggle {
+  background: rgba(143, 207, 241, 0.5);
+}
+
+.toggleShape {
+  border-radius: 100%;
+}
+
+.tool-item.load {
+  position: static;
+  top: 12px;
+  left: 10px;
+
+  /* display: inline-block; */
+  float: right;
+  width: 50px;
+  height: 23px;
+  margin: 15px 10px;
+
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.641327);
+  background: rgba(143, 207, 241, 0.5);
+}
+
+.tool-item.save {
+  position: static;
+  top: 40px;
+  left: 10px;
+  float: right;
+  width: 50px;
+  height: 23px;
+  margin: 15px auto;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.641327);
+  background: rgba(143, 207, 241, 0.5);
+}
+
+.load:active,
+.save:active {
+  color: rgb(255, 255, 255);
+  background: rgba(16, 135, 199, 0.9);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(200, 200, 200);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(100, 100, 100, 0.6);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(34, 255, 101);
+}
+
+.preview-container:-webkit-full-screen {
+  padding: calc(( 100vh - 434px ) / 2) calc(( 100vw - 384px ) / 2);
+  max-height: 384px !important;
+  background: rgb(200, 200, 200);
+}
+
+.frame-list-container-scroller {
+  position: absolute;
+  left: 28%;
+  top: 79px;
+  width: 119px;
+  height: 587px;
+  text-align: left;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.frame-list-container {
+  background: rgb(200, 200, 200);
+
+  width: 102px;
+}
+
+.frame-list {
+  position: absolute;
+  width: 102px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 0;
+  display: block;
+}
+
+.frame {
+  width: 96px;
+  height: 96px;
+  position: relative;
+  margin-bottom: 4px;
+  border: 3px solid rgb(200, 200, 200);
+  display: block;
+}
+
+.frame:hover {
+  border: 3px solid rgb(114, 114, 114);
+}
+
+.add-frame:hover {
+  border: 3px solid rgb(34, 255, 101);
+}
+
+.frame[data-is-active="1"] {
+  border: 3px solid rgb(34, 255, 101);
+}
+
+
+.canvas-frame {
+  background-color: rgb(100, 100, 100, 0.6);
+  margin: 0 0;
+  position: absolute;
+  top: 0;
+}
+
+.add-frame {
+  color: rgb(255, 255, 255);
+  background-color: rgb(56, 56, 56);
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 12px;
+  width: 96px;
+  height: 38px;
+  display: flex;
+  border: 3px solid rgb(114, 114, 114);
+  cursor: pointer;
+}
+
+.add-frame-ico {
+  background-image: url("./images/icons.png");
+  background-position: -274px -157px;
+  width: 26px;
+  height: 26px;
+  align-self: center;
+}
+
+.add-frame-text {
+  box-sizing: border-box;
+  padding: 0 7px;
+  width: calc(100% - 26px);
+  align-self: center;
+  word-wrap: break-word;
+}
+
+.frame-del {
+  visibility: hidden;
+  z-index: 10;
+  background-color: rgb(100, 100, 100, 0.6);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1px 6px;
+  background-image: url("./images/icons.png");
+  background-position: -274px -106px;
+}
+
+.frame-copy {
+  visibility: hidden;
+  z-index: 10;
+  background-color: rgb(100, 100, 100, 0.6);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 1px 6px;
+  background-image: url("./images/icons.png");
+  background-position: -274px -76px;
+}
+
+.frame-number {
+  z-index: 10;
+  background-color: rgb(34, 255, 101);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 900;
+  color: rgb(56, 56, 56);
+  padding: 1px 6px;
+}
+
+.preview-container {
+  position: absolute;
+  top: 79px;
+  left: calc(30% + 544px);
+  width: 192px;
+  height: 573px;
+  display: block;
+  background: rgb(200, 200, 200);
+  border: 7px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24), 0 0 4px rgb(200, 200, 200);
+}
+
+.to-fs-mode-btn {
+  z-index: 10;
+  background-color: rgb(100, 100, 100, 0.6);
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  box-sizing: border-box;
+  margin: 3px;
+  border: 2px solid white;
+
+  background-image: url("./images/icons.png");
+  background-position: -295px -183px;
+}
+
+.preview {
+  background-color: rgb(100, 100, 100, 0.6);
+  width: 100%;
+  height: 192px;
+  max-width: 384px;
+  max-height: 384px;
+}
+
+.fps-controls {
+  height: 50px;
+  max-width: 384px;
+  display: flex;
+  justify-content: left;
+  background-color: rgb(56, 56, 56);
+}
+
+.fps {
+  width: 55px;
+  text-align: center;
+  padding: 0 auto;
+  margin: auto 7px;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 900;
+}
+
+.choose-fps {
+  width: calc(100% - 80px);
+}
+
+.main-canvas-container {
+  position: absolute;
+  left: calc(30% + 131px);
+  top: 79px;
+  height: 573px;
+  display: block;
+  background: rgb(200, 200, 200);
+  border: 7px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24), 0 0 4px rgb(200, 200, 200);
+}
+
+.main-canvas {
+  background-color: rgb(100, 100, 100, 0.6);
+}

@@ -114,8 +114,7 @@ function addNewFrame() {
   </button><div class="background" data-cur-frame-num="${frameList.children.length}"></div>
   <canvas id="frame-canvas" class="canvas-frame" width="96" height="96" data-cur-frame-num="${frameList.children.length}"></canvas>`;
   frameList.insertBefore(newFrame, addFrameBtn);
-  ctx.clearRect(0, 0, 384, 384);
-  dataUrls.push(mainCanvas.toDataURL());
+  dataUrls.push('');
 }
 
 function setActiveFrame(e) {

@@ -331,6 +331,7 @@ button {
 .frame-list {
   position: absolute;
   width: 102px;
+  height: 587px;
   list-style: none;
   margin: 0 auto;
   padding: 0 0;

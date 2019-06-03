@@ -148,7 +148,9 @@ function drawOnCanvas() {
     activeFrameCtx = activeFrameCanvas.getContext('2d');
 
     ctx.fillStyle = getComputedStyle(curColor).backgroundColor;
-    ctx.fillRect(80, 0, 50, 50);
+    ctx.beginPath();
+    ctx.arc(Math.random() * 384, Math.random() * 384, Math.random() * 50, 0, Math.PI * 2);
+    ctx.fill();
     dataUrls[activeFrameCanvas.dataset.curFrameNum - 1] = mainCanvas.toDataURL();
 
     const img = new Image();

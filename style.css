@@ -437,13 +437,13 @@ button {
 .preview-container {
   position: absolute;
   top: 79px;
-  left: calc(30% + 544px);
+  left: calc(32.85% + 544px);
   width: 192px;
-  height: 573px;
+  height: 192px;
   display: block;
   background: rgb(200, 200, 200);
-  border: 7px solid rgba(0, 0, 0, 0);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24), 0 0 4px rgb(200, 200, 200);
+  /* border: 7px solid rgba(0, 0, 0, 0); */
+  /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24), 0 0 4px rgb(200, 200, 200); */
 }
 
 .to-fs-mode-btn {
@@ -496,10 +496,10 @@ button {
   position: absolute;
   left: calc(30% + 131px);
   top: 79px;
-  height: 573px;
+  height: 384px;
   display: block;
-  background: rgb(200, 200, 200);
-  border: 7px solid rgba(0, 0, 0, 0);
+  /* background: rgb(200, 200, 200); */
+  border: 7px solid rgb(200, 200, 200);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24), 0 0 4px rgb(200, 200, 200);
 }
 
